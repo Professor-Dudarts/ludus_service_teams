@@ -29,7 +29,7 @@ CREATE TABLE `team` (
   `nickname_club` varchar(30) DEFAULT NULL,
   `name_club` varchar(30) NOT NULL,
   `acronym_club` varchar(30) NOT NULL,
-  `shield_club` varchar(30) NOT NULL,
+  `shield_club` varchar(255) NOT NULL,
   PRIMARY KEY (`team_id`),
   KEY `coach_id` (`coach_id`),
   CONSTRAINT `team_ibfk_1` FOREIGN KEY (`coach_id`) REFERENCES `coach` (`coach_id`)

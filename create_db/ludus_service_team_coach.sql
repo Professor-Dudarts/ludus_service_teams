@@ -18,6 +18,7 @@
 --
 -- Table structure for table `coach`
 --
+USE ludus_service_team;
 
 DROP TABLE IF EXISTS `coach`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
@@ -29,6 +30,13 @@ CREATE TABLE `coach` (
   PRIMARY KEY (`coach_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
+
+INSERT INTO coach (name, age) VALUES
+('Fernando Lázaro', 41),
+('Rogério Ceni', 50),
+('Orlando Ribeiro', 56),
+('Dorival Júnior', 48),
+('Abel Ferreira', 43);
 
 --
 -- Dumping data for table `coach`

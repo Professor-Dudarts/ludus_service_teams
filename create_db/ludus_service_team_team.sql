@@ -18,6 +18,7 @@
 --
 -- Table structure for table `team`
 --
+USE ludus_service_team;
 
 DROP TABLE IF EXISTS `team`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
@@ -35,6 +36,13 @@ CREATE TABLE `team` (
   CONSTRAINT `team_ibfk_1` FOREIGN KEY (`coach_id`) REFERENCES `coach` (`coach_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
+
+INSERT INTO team (coach_id, popular_name, nickname_club, name_club, acronym_club, shield_club) VALUES
+(1, 'Corinthians', 'Timão', 'Sport Club Corinthians Paulista', 'SCCP', 'https://logodetimes.com/times/corinthians/logo-corinthians-4096.png'),
+(2, 'São Paulo', 'Tricolor', 'São Paulo Futebol Clube', 'SPFC', 'https://logodetimes.com/times/sao-paulo/logo-sao-paulo-4096.png'),
+(4, 'Flamengo', 'Mengão', 'Clube de Regatas do Flamengo', 'CRF', 'https://logodetimes.com/times/flamengo/logo-flamengo-4096.png'),
+(5, 'Palmeiras', 'Verdão', 'Sociedade Esportiva Palmeiras', 'SEP', 'https://logodetimes.com/times/palmeiras/logo-palmeiras-4096.png');
+
 
 --
 -- Dumping data for table `team`

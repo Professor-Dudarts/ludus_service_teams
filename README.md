@@ -16,4 +16,5 @@ Microserviço do projeto de aplicativo de futebol para prover os recursos de dad
 
 ## Como utilizar o Cypess?
 ![Print da tela inicial](ImageCypress.jpg)
-**Nota:** Apenas Click em algum dos testes apresentados na sua tela que irá funcionar.
+
+**Apenas Click em algum dos testes apresentados na sua tela que irá funcionar.**

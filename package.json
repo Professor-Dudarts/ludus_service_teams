@@ -1,0 +1,24 @@
+{
+  "name": "ludus_service_teams",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Professor-Dudarts/ludus_service_teams.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Professor-Dudarts/ludus_service_teams/issues"
+  },
+  "homepage": "https://github.com/Professor-Dudarts/ludus_service_teams#readme",
+  "dependencies": {
+    "cypress": "^12.8.1",
+    "cypress-plugin-api": "^2.11.0"
+  }
+}

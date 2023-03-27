@@ -15,5 +15,5 @@ Microserviço do projeto de aplicativo de futebol para prover os recursos de dad
 **Nota:** o servidor `MySQL` está utilizando a porta **9906** e o servidor `PHP` a porta **8100** do seu computador, certifique-se que essas portas não estão sendo usadas
 
 ## Como utilizar o Cypess?
-![Print da tela inicial](ImageCypress)
+![Print da tela inicial](ImageCypress.jpg)
 **Nota:** Apenas Click em algum dos testes apresentados na sua tela que irá funcionar.

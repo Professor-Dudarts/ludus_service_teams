@@ -1,6 +1,6 @@
 /// <reference types="cypress"/>
 
-describe('POST requisão', () => {
+describe('Enviar requisição POST para criar um novo time', () => {
     it.only("Validando POST da API Team", () => {
         cy.request({
             method: 'POST',

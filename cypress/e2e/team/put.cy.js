@@ -1,6 +1,6 @@
 /// <reference types="cypress"/>
 
-describe('PUT requisão', () => {
+describe('Enviar requisição PUT para atualizar um time existente', () => {
     it.only("Validando PUT da API Team", () => {
         cy.request({
             method: 'PUT',

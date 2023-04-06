@@ -1,3 +1,3 @@
 # Testes automatizados com Cypress
 
-Vá para a seção [estrutura do curso](./lessons/the-config-cypress.md).
+Vá para a explicação [configuração cypress](./lessons/the-config-cypress.md).

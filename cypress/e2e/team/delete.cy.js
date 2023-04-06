@@ -1,6 +1,6 @@
 /// <reference types="cypress"/>
 
-describe('DELETE', () => {
+describe('Enviar requisição DELETE para excluir um time existente', () => {
     it.only("Validando DELETE da API Team", () => {
         cy.request({
             method: 'DELETE',

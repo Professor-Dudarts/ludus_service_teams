@@ -18,6 +18,7 @@
 --
 -- Table structure for table `team`
 --
+USE ludus_service_team;
 
 DROP TABLE IF EXISTS `team`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;

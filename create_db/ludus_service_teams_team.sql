@@ -1,6 +1,6 @@
 -- MySQL dump 10.13  Distrib 8.0.32, for Win64 (x86_64)
 --
--- Host: 127.0.0.1    Database: ludus_service_team
+-- Host: localhost    Database: ludus_service_teams
 -- ------------------------------------------------------
 -- Server version	8.0.32
 
@@ -26,32 +26,16 @@ DROP TABLE IF EXISTS `team`;
 CREATE TABLE `team` (
   `team_id` int NOT NULL AUTO_INCREMENT,
   `coach_id` int NOT NULL,
-  `popular_name` varchar(30) DEFAULT NULL,
-  `nickname_club` varchar(30) DEFAULT NULL,
-  `name_club` varchar(30) NOT NULL,
-  `acronym_club` varchar(30) NOT NULL,
+  `popular_name` varchar(60) DEFAULT NULL,
+  `nickname_club` varchar(60) DEFAULT NULL,
+  `name_club` varchar(60) NOT NULL,
+  `acronym_club` varchar(60) NOT NULL,
   `shield_club` varchar(255) NOT NULL,
   PRIMARY KEY (`team_id`),
   KEY `coach_id` (`coach_id`),
   CONSTRAINT `team_ibfk_1` FOREIGN KEY (`coach_id`) REFERENCES `coach` (`coach_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
-
-INSERT INTO team (coach_id, popular_name, nickname_club, name_club, acronym_club, shield_club) VALUES
-(1, 'Corinthians', 'Timão', 'Sport Club Corinthians Paulista', 'SCCP', 'https://logodetimes.com/times/corinthians/logo-corinthians-4096.png'),
-(2, 'São Paulo', 'Tricolor', 'São Paulo Futebol Clube', 'SPFC', 'https://logodetimes.com/times/sao-paulo/logo-sao-paulo-4096.png'),
-(4, 'Flamengo', 'Mengão', 'Clube de Regatas do Flamengo', 'CRF', 'https://logodetimes.com/times/flamengo/logo-flamengo-4096.png'),
-(5, 'Palmeiras', 'Verdão', 'Sociedade Esportiva Palmeiras', 'SEP', 'https://logodetimes.com/times/palmeiras/logo-palmeiras-4096.png');
-
-
---
--- Dumping data for table `team`
---
-
-LOCK TABLES `team` WRITE;
-/*!40000 ALTER TABLE `team` DISABLE KEYS */;
-/*!40000 ALTER TABLE `team` ENABLE KEYS */;
-UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
@@ -62,4 +46,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2023-03-19 17:29:42
+-- Dump completed on 2023-03-26 17:35:48

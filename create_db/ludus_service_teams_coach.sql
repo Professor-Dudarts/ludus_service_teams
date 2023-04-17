@@ -1,6 +1,6 @@
 -- MySQL dump 10.13  Distrib 8.0.32, for Win64 (x86_64)
 --
--- Host: 127.0.0.1    Database: ludus_service_team
+-- Host: localhost    Database: ludus_service_teams
 -- ------------------------------------------------------
 -- Server version	8.0.32
 
@@ -25,27 +25,11 @@ DROP TABLE IF EXISTS `coach`;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `coach` (
   `coach_id` int NOT NULL AUTO_INCREMENT,
-  `name` varchar(30) NOT NULL,
+  `name` varchar(60) NOT NULL,
   `age` int NOT NULL,
   PRIMARY KEY (`coach_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
-
-INSERT INTO coach (name, age) VALUES
-('Fernando Lázaro', 41),
-('Rogério Ceni', 50),
-('Orlando Ribeiro', 56),
-('Dorival Júnior', 48),
-('Abel Ferreira', 43);
-
---
--- Dumping data for table `coach`
---
-
-LOCK TABLES `coach` WRITE;
-/*!40000 ALTER TABLE `coach` DISABLE KEYS */;
-/*!40000 ALTER TABLE `coach` ENABLE KEYS */;
-UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
@@ -56,4 +40,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2023-03-19 17:29:42
+-- Dump completed on 2023-03-26 17:35:48

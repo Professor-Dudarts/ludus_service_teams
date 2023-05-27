@@ -15,7 +15,7 @@ Microserviço do projeto de aplicativo de futebol para prover os recursos de dad
 **Nota:** o servidor `MySQL` está utilizando a porta **9906** e o servidor `PHP` a porta **8100** do seu computador, certifique-se que essas portas não estão sendo usadas.
 
 ## Como utilizar a API?
-![Print da tela inicial](inicio_api.png)
+![Print da tela inicial](api_documentation.png)
 
 **Bem simples, não? 😎**
 

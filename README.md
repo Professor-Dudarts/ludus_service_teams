@@ -10,7 +10,7 @@ Microserviço do projeto de aplicativo de futebol para prover os recursos de dad
 2. Execute `docker-compose up -d`
 3. Execute `php artisan migrate` para gerar as tabelas do MySQL
 4. Execute `php artisan tinker`
-4-1. Execute `Coach::factory()->count(10)->create();` e `Team::factory()->count(10)->create();` para gerar registros aleatóriamente
+5. Execute `Coach::factory()->count(10)->create();` e `Team::factory()->count(10)->create();` para gerar registros aleatóriamente
 
 **Nota:** o servidor `MySQL` está utilizando a porta **9906** e o servidor `PHP` a porta **8100** do seu computador, certifique-se que essas portas não estão sendo usadas.
 

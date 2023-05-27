@@ -1,13 +1,10 @@
 <?php
 
-use Illuminate\Foundation\Auth\User;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\CoachController;
 use App\Http\Controllers\TeamController;
-
-use Laravel\Sanctum\PersonalAccessToken;
-
+use App\Models\User;
 
 /*
 |--------------------------------------------------------------------------
@@ -23,7 +20,7 @@ use Laravel\Sanctum\PersonalAccessToken;
 Route::get('/getToken', function () {
     $tempUser = User::firstOrCreate(
         ['email' => 'temporary@example.com'],
-        ['password' => Hash::make('temporary-password')] 
+        ['name' => 'Temporary User', 'password' => Hash::make('temporary-password')] 
     );
 
     $token = $tempUser->createToken('Temporary Token')->plainTextToken;

@@ -21,6 +21,7 @@ class CoachController extends Controller
      *     path="/api/coach",
      *     operationId="getCoaches",
      *     tags={"Coaches"},
+     *     security={{ "bearerAuth": {} }},
      *     summary="Get list of coaches",
      *     @OA\Response(
      *         response=200,

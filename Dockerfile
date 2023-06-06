@@ -22,6 +22,7 @@ RUN composer config --global process-timeout 2000
 WORKDIR /var/www/html
 RUN composer install
 
+
 # Generate Laravel application key
 RUN php artisan key:generate
 

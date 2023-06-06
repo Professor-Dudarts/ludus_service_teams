@@ -15,9 +15,15 @@ RUN apt-get update && apt-get install -y \
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
 ENV COMPOSER_ALLOW_SUPERUSER=1
 
+# Increase Composer timeout
+RUN composer config --global process-timeout 2000
+
 # Install Laravel dependencies
 WORKDIR /var/www/html
 RUN composer install
+
+# Generate Laravel application key
+RUN php artisan key:generate
 
 # Enable Apache modules and set document root
 RUN a2enmod rewrite

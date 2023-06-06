@@ -44,6 +44,7 @@ class CoachController extends Controller
      *     path="/api/coach/{id}",
      *     operationId="getCoachById",
      *     tags={"Coaches"},
+     *     security={{ "bearerAuth": {} }},
      *     summary="Find coach by ID",
      *     @OA\Parameter(
      *         name="id",
@@ -77,6 +78,7 @@ class CoachController extends Controller
      *     path="/api/coach",
      *     operationId="createCoach",
      *     tags={"Coaches"},
+     *     security={{ "bearerAuth": {} }},
      *     summary="Create a new coach",
      *     @OA\RequestBody(
      *         description="Coach object to be created",
@@ -118,6 +120,7 @@ class CoachController extends Controller
      *     path="/api/coach/{id}",
      *     operationId="updateCoach",
      *     tags={"Coaches"},
+     *     security={{ "bearerAuth": {} }},
      *     summary="Update an existing coach",
      *     @OA\Parameter(
      *         name="id",
@@ -162,6 +165,7 @@ class CoachController extends Controller
      *     path="/api/coach/{id}",
      *     operationId="deleteCoach",
      *     tags={"Coaches"},
+     *     security={{ "bearerAuth": {} }},
      *     summary="Delete a coach",
      *     @OA\Parameter(
      *         name="id",

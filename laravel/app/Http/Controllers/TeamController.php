@@ -14,6 +14,7 @@ class TeamController extends Controller
      *     path="/api/team",
      *     operationId="getTeams",
      *     tags={"Teams"},
+     *     security={{ "bearerAuth": {} }},
      *     summary="Get list of teams",
      *     @OA\Response(
      *         response=200,
@@ -36,6 +37,7 @@ class TeamController extends Controller
      *     path="/api/team/{id}",
      *     operationId="getTeamById",
      *     tags={"Teams"},
+     *     security={{ "bearerAuth": {} }},
      *     summary="Find team by ID",
      *     @OA\Parameter(
      *         name="id",
@@ -73,6 +75,7 @@ class TeamController extends Controller
      *     path="/api/team",
      *     operationId="createTeam",
      *     tags={"Teams"},
+     *     security={{ "bearerAuth": {} }},
      *     summary="Create a new team",
      *     @OA\RequestBody(
      *         description="Team object to be created",
@@ -114,6 +117,7 @@ class TeamController extends Controller
     *     path="/api/team/{id}",
     *     operationId="updateTeam",
     *     tags={"Teams"},
+    *     security={{ "bearerAuth": {} }},
     *     summary="Update an existing team",
     *     @OA\Parameter(
     *         name="id",
@@ -158,6 +162,7 @@ class TeamController extends Controller
      *     path="/api/team/{id}",
      *     operationId="deleteTeam",
      *     tags={"Teams"},
+     *     security={{ "bearerAuth": {} }},
      *     summary="Delete a team",
      *     @OA\Parameter(
      *         name="id",

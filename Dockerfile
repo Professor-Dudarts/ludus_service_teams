@@ -18,6 +18,9 @@ ENV COMPOSER_ALLOW_SUPERUSER=1
 # Install Laravel dependencies
 WORKDIR /var/www/html
 RUN composer install
+RUN docker-compose build
+RUN docker-compose up -d
+RUN php artisan migrate
 
 # Enable Apache modules and set document root
 RUN a2enmod rewrite

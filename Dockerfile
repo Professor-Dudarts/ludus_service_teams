@@ -26,7 +26,7 @@ RUN composer install
 # Generate Laravel application key
 RUN php artisan key:generate
 # Generate Table of Contents
-RUN php artisan migrate
+RUN php artisan migrate:refresh
 
 # Enable Apache modules and set document root
 RUN a2enmod rewrite

@@ -26,7 +26,7 @@ RUN composer install
 RUN php artisan key:generate
 
 RUN chmod +x startdb.sh
-CMD ["startdb.sh"]
+ENTRYPOINT ["startdb.sh"]
 
 # Enable Apache modules and set document root
 RUN a2enmod rewrite

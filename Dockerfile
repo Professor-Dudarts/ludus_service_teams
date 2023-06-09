@@ -25,9 +25,6 @@ RUN composer install
 # Generate Laravel application key
 RUN php artisan key:generate
 
-# Generate Table of Contents
-RUN docker-compose exec app php artisan migrate
-
 # Enable Apache modules and set document root
 RUN a2enmod rewrite
 ENV APACHE_DOCUMENT_ROOT /var/www/html/public

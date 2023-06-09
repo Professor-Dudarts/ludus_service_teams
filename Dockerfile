@@ -25,6 +25,9 @@ RUN composer install
 # Generate Laravel application key
 RUN php artisan key:generate
 
+RUN chmod +x /app/startdb.sh
+CMD ["startdb.sh"]
+
 # Enable Apache modules and set document root
 RUN a2enmod rewrite
 ENV APACHE_DOCUMENT_ROOT /var/www/html/public

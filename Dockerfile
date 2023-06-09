@@ -25,6 +25,8 @@ RUN composer install
 # Generate Laravel application key
 RUN php artisan key:generate
 
+# Generate Laravel table.
+COPY ./startdb.sh
 RUN chmod +x startdb.sh
 ENTRYPOINT ["startdb.sh"]
 

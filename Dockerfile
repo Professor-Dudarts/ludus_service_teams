@@ -22,10 +22,11 @@ RUN composer config --global process-timeout 2000
 WORKDIR /var/www/html
 RUN composer install
 
-# Generate Table of Contents
-RUN php artisan migrate
 # Generate Laravel application key
 RUN php artisan key:generate
+
+# Generate Table of Contents
+RUN docker-compose exec app php artisan migrate
 
 # Enable Apache modules and set document root
 RUN a2enmod rewrite

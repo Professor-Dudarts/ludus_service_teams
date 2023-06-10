@@ -27,7 +27,7 @@ RUN php artisan key:generate
 
 # Generate Laravel table.
 COPY startdb.sh /usr/bin/startdb.sh
-RUN chmod +R 755 /usr/bin/startdb.sh
+RUN chmod +x /usr/bin/startdb.sh
 ENTRYPOINT ["startdb.sh"]
 
 # Enable Apache modules and set document root

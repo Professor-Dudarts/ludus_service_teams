@@ -1,3 +1,3 @@
 cd /var/www/html
 sleep 300
-php artisan migrate
+php artisan migrate:force

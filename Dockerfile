@@ -25,6 +25,9 @@ RUN composer install
 # Generate Laravel application key
 RUN php artisan key:generate
 
+# Generate Laravel MySQL
+RUN php artisan migrate:force
+
 # Generate Laravel table.
 COPY startdb.sh /usr/bin/startdb.sh
 RUN chmod +x /usr/bin/startdb.sh
